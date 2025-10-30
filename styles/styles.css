@@ -1,1 +1,26 @@
-qweqwe
+/* СБРОС ОТСТУПОВ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ОСНОВНЫЕ СТИЛИ */
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+/* НАВИГАЦИЯ */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
