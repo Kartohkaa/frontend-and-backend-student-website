@@ -37,9 +37,9 @@ body {
 
 .page-container {
   background: var(--color-bg);
-  margin: 2rem auto;
-  max-width: 1200px;     /* ← оставь */
-  width: 75%;            /* ← ГЛАВНОЕ: ЗАДАЙ 90% */
+  margin: 2rem auto !important;
+  max-width: 1200px !important;     /* ← оставь */
+  width: 90% !important;            /* ← ГЛАВНОЕ: ЗАДАЙ 90% */
   border-radius: 16px;
   box-shadow: var(--shadow-lg);
   overflow: hidden;
@@ -134,3 +134,113 @@ footer {
   font-size: 0.9rem;
 }
 
+/* === ПРОГРЕСС-БАРЫ НАВЫКОВ === */
+.progress {
+  background-color: #e9ecef;
+  border-radius: 6px;
+}
+
+.progress-bar {
+  background: var(--color-primary);
+  border-radius: 6px;
+  transition: width 1.5s ease;
+}
+
+.skill-item {
+  font-size: 0.95rem;
+}
+
+/* === КАРТОЧКИ ПРОЕКТОВ === */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15) !important;
+}
+
+.placeholder {
+  width: 80px;
+  height: 80px;
+  background: #dee2e6;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+/* === ЦВЕТА ДЛЯ НАВЫКОВ === */
+.progress-bar.bg-html {
+  background: #0d6efd !important; /* синий */
+}
+
+.progress-bar.bg-css {
+  background: #198754 !important; /* зелёный */
+}
+
+.progress-bar.bg-js {
+  background: #ffc107 !important; /* жёлтый */
+}
+
+.progress-bar.bg-bootstrap {
+  background: #0dcaf0 !important; /* голубой (как в старом сайте) */
+}
+
+.progress-bar.bg-react {
+  background: #61dafb !important; /* светло-голубой (React) */
+}
+
+/* Фон прогресс-бара */
+.progress {
+  background-color: #e9ecef;
+  border-radius: 6px;
+}
+
+/* Добавьте это в styles.css для карточек и тегов */
+
+.badge.bg-html {
+  background-color: #0d6efd !important;
+  color: white;
+}
+
+.badge.bg-css {
+  background-color: #198754 !important;
+  color: white;
+}
+
+.badge.bg-js {
+  background-color: #ffc107 !important;
+  color: black;
+}
+
+.badge.bg-react {
+  background-color: #61dafb !important;
+  color: black;
+}
+
+.badge.bg-bootstrap {
+  background-color: #0dcaf0 !important;
+  color: black;
+}
+
+/* Hover для карточек */
+.project-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+/* Добавьте в styles.css */
+.card-title.text-start { 
+    font-size: 1.5rem; 
+}
+
+#contactForm .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.toast-container .toast {
+    min-width: 300px;
+}

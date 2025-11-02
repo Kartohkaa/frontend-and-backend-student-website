@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт-портфолио студента - Проекты</title>
-    <!-- Bootstrap -->
+    <title>Проекты | Портфолио</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- Кастомные стили -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
-    <!-- === ШАПКА НА ГРАДИЕНТЕ === -->
     <header class="text-center py-5 text-white">
         <div class="container">
             <div class="mb-3">
@@ -26,7 +22,6 @@
         </div>
     </header>
 
-    <!-- === НАВИГАЦИЯ НА ЧЁРНОМ ФОНЕ === -->
     <div class="nav-wrapper bg-dark">
         <nav class="navbar navbar-expand-lg navbar-dark-custom">
             <div class="container">
@@ -61,21 +56,54 @@
         </nav>
     </div>
 
-    <!-- === КОНТЕНТНЫЙ БЛОК === -->
     <div class="page-container">
         <main class="container my-5">
             <h2 class="text-center mb-5">Мои проекты</h2>
-            <!-- Здесь будут карточки проектов -->
             <div class="row g-4">
+                <!-- Личный сайт -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
                         <div class="card-body">
-                            <h5 class="card-title">Проект 1</h5>
-                            <p class="card-text">Описание проекта...</p>
+                            <h5 class="card-title">Личный сайт</h5>
+                            <p class="card-text">Сайт-портфолио с демонстрацией навыков веб-разработки.</p>
+                            <span class="badge bg-html">HTML</span>
+                            <span class="badge bg-css">CSS</span>
                         </div>
                     </div>
                 </div>
-                <!-- Добавь больше карточек -->
+
+                <!-- Todo-приложение -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                        <div class="card-body">
+                            <h5 class="card-title">Todo-приложение</h5>
+                            <p class="card-text">Приложение для управления задачами с добавлением, редактированием и удалением элементов.</p>
+                            <span class="badge bg-js">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Интернет-магазин -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                        <div class="card-body">
+                            <h5 class="card-title">Интернет-магазин</h5>
+                            <p class="card-text">Полноценный e-commerce сайт с корзиной, фильтрами и оплатой.</p>
+                            <span class="badge bg-react">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Портфолио -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                        <div class="card-body">
+                            <h5 class="card-title">Портфолио</h5>
+                            <p class="card-text">Сайт-портфолио с использованием Bootstrap для адаптивной верстки.</p>
+                            <span class="badge bg-bootstrap">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -84,7 +112,86 @@
         </footer>
     </div>
 
-    <!-- Bootstrap JS -->
+    <!-- Модальное окно для Личного сайта -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Личный сайт</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Сайт-портфолио студента.</p>
+
+<grok-card data-id="b56e4c" data-type="image_card"></grok-card>
+
+                    <a href="https://kartohkaa.github.io/frontend-and-backend-student-website/" target="_blank">Живая версия</a><br>
+                    <a href="https://github.com/kartohkaa/frontend-and-backend-student-website" target="_blank">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для Todo-приложения -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel2">Todo-приложение</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>В работе...</p>
+
+<grok-card data-id="843dda" data-type="image_card"></grok-card>
+
+                    <a href="https://example.com/todo-app" target="_blank">Живая версия</a><br>
+                    <a href="https://github.com/kartohkaa/todo-app" target="_blank">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для Интернет-магазина -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel3">Интернет-магазин</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>В работе...</p>
+
+<grok-card data-id="444cde" data-type="image_card"></grok-card>
+
+                    <a href="https://example.com/ecommerce" target="_blank">Живая версия</a><br>
+                    <a href="https://github.com/kartohkaa/ecommerce-react" target="_blank">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для Портфолио -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel4">Портфолио</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>В работе...</p>
+
+<grok-card data-id="4f49d2" data-type="image_card"></grok-card>
+
+                    <a href="https://example.com/bootstrap-portfolio" target="_blank">Живая версия</a><br>
+                    <a href="https://github.com/kartohkaa/bootstrap-portfolio" target="_blank">Исходный код</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

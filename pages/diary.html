@@ -58,8 +58,112 @@
 
     <div class="page-container">
         <main class="container my-5">
-            <h2 class="text-center mb-5">Учебный дневник</h2>
-            <p class="text-center">Здесь будут записи о практике...</p>
+            <!-- Мой учебный прогресс -->
+            <section class="mb-5">
+                <h2 class="text-center mb-4">Мой учебный прогресс</h2>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>02 ноября 2025</strong> - Изучение модальных окон
+                            </li>
+                            <li class="list-group-item">
+                                <strong>01 ноября 2025</strong> - Работа над прогресс-барами и цветами навыков
+                            </li>
+                            <li class="list-group-item">
+                                <strong>31 октября 2025</strong> - Верстка страницы проектов
+                            </li>
+                            <li class="list-group-item">
+                                <strong>28 октября 2025</strong> - Верстка макета сайта
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Текущие курсы -->
+            <section class="mb-5">
+                <h2 class="text-center mb-4">Текущие курсы</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Веб-разработка</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar bg-primary" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar bg-js" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>React</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar bg-react" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Кнопка добавить запись -->
+            <div class="text-center mb-4">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addEntryModal">
+                    Добавить запись
+                </button>
+            </div>
+
+            <!-- Модальное окно для добавления записи -->
+            <div class="modal fade" id="addEntryModal" tabindex="-1" aria-labelledby="addEntryLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addEntryLabel">Добавить новую запись</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="entryDate" class="form-label">Дата</label>
+                                    <input type="date" class="form-control" id="entryDate" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="entryDescription" class="form-label">Описание</label>
+                                    <textarea class="form-control" id="entryDescription" rows="3" required></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                            <button type="button" class="btn btn-primary">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Разделитель -->
+            <hr class="border-secondary opacity-25">
+
+            <!-- Контакты -->
+            <section>
+                <h2 class="text-center mb-4">Контакты</h2>
+                <div class="text-center">
+                    <p>Email: shulga.m.a@edu.mirea.ru</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                </div>
+            </section>
+
         </main>
 
         <footer class="text-center py-4 border-top">

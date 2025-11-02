@@ -26,7 +26,7 @@
         </div>
     </header>
 
-    <!-- === НАВИГАЦИЯ НА ЧЁРНОМ ФОНЕ (вне контейнера) === -->
+    <!-- === НАВИГАЦИЯ НА ЧЁРНОМ ФОНЕ === -->
     <div class="nav-wrapper bg-dark">
         <nav class="navbar navbar-expand-lg navbar-dark-custom">
             <div class="container">
@@ -64,6 +64,8 @@
     <!-- === ОСНОВНОЙ КОНТЕНТНЫЙ БЛОК === -->
     <div class="page-container">
         <main class="container my-5">
+
+            <!-- === ПРИВЕТСТВИЕ + ФОТО === -->
             <section class="row align-items-center mb-5">
                 <div class="col-md-3 text-center mb-4 mb-md-0">
                     <div class="border rounded-circle overflow-hidden mx-auto" style="width: 180px; height: 180px;">
@@ -81,8 +83,104 @@
                     </a>
                 </div>
             </section>
+
+            <!-- === РАЗДЕЛИТЕЛЬ === -->
+            <hr class="border-secondary opacity-25">
+
+            <!-- === НАВЫКИ === -->
+            <section class="mb-5">
+                <h2 class="text-center mb-4">Мои навыки</h2>
+                <div class="row justify-content">
+                    <div class="col-lg-8 ps-5">
+                        <!-- HTML -->
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar bg-html" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>CSS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar bg-css" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar bg-js" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Bootstrap -->
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Bootstrap</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar bg-bootstrap" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- React -->
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>React</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar bg-react" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === РАЗДЕЛИТЕЛЬ === -->
+            <hr class="border-secondary opacity-25">
+
+            <!-- === ЛУЧШИЕ ПРОЕКТЫ === -->
+            <section class="mb-5">
+                <h2 class="text-center mb-5">Лучшие проекты</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                    <div class="col">
+                        <div class="card project-card h-100 shadow-sm text-center p-3">
+                            <div class="placeholder mb-3 mx-auto"></div>
+                            <h5 class="card-title">П1</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card project-card h-100 shadow-sm text-center p-3">
+                            <div class="placeholder mb-3 mx-auto"></div>
+                            <h5 class="card-title">П2</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card project-card h-100 shadow-sm text-center p-3">
+                            <div class="placeholder mb-3 mx-auto"></div>
+                            <h5 class="card-title">П3</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
+        <!-- === ФУТЕР === -->
         <footer class="text-center py-4 border-top">
             <p class="mb-0 text-muted">© 2025 Михаил Шульга. Все права защищены.</p>
         </footer>
@@ -91,4 +189,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
