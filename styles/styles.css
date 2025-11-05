@@ -244,3 +244,17 @@ footer {
 .toast-container .toast {
     min-width: 300px;
 }
+
+/* Карточки проектов */
+.project-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Модальные окна */
+.modal-header .btn-close {
+    margin: -0.5rem -0.5rem -0.5rem auto;
+}
