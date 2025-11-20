@@ -353,3 +353,24 @@ body,
   width: 100%;
   height: 100%;
 }
+
+/* === ПРАКТИКА 16 — АДАПТИВНЫЕ ИЗОБРАЖЕНИЯ === */
+
+/* Fluid размер аватарки на главной */
+.avatar-wrapper {
+  width: clamp(140px, 22vw, 220px);
+  height: clamp(140px, 22vw, 220px);
+}
+
+/* Убеждаемся, что picture работает идеально в ratio */
+.card-img-wrapper picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Контакты | Портфолио</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -41,8 +41,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="diary.html">Дневник</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contacts.html">Контакты</a>
+                        <li class="nav-link active" href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -51,9 +50,8 @@
     </div>
 
     <div class="page-container">
-        <main class="container my-5">
+        <main class="container my-5" id="main-content">
 
-            <!-- Форма — в карточке, по центру -->
             <section class="mb-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -86,7 +84,6 @@
                 </div>
             </section>
 
-            <!-- Контакты — по центру, иконки слева -->
             <section class="text-center">
                 <h2 class="h4 mb-4">Контакты</h2>
                 <div class="row justify-content-center g-4">
@@ -118,7 +115,6 @@
         </footer>
     </div>
 
-    <!-- Уведомление -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert">
             <div class="d-flex">

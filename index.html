@@ -3,32 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт-портфолио студента</title>
-    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Шульга Михаил | Портфолио студента</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- Кастомные стили -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
-    
-    <!-- === ШАПКА НА ГРАДИЕНТЕ === -->
+
+    <!-- ШАПКА НА ГРАДИЕНТЕ -->
     <header class="text-center py-5 text-white">
         <div class="container">
             <div class="mb-3">
                 <i class="bi bi-code-slash display-1"></i>
             </div>
-            <h1 class="display-5 fw-bold mb-0">
-                Шульга Михаил Антонович
-            </h1>
+            <h1 class="display-5 fw-bold mb-0">Шульга Михаил Антонович</h1>
         </div>
     </header>
 
-    <!-- === НАВИГАЦИЯ НА ЧЁРНОМ ФОНЕ === -->
+    <!-- НАВИГАЦИЯ (sticky + blur + safe-area) -->
     <div class="nav-wrapper bg-dark">
         <nav class="navbar navbar-expand-lg navbar-dark-custom">
             <div class="container">
@@ -37,114 +32,100 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto gap-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">
-                                <i class="bi bi-house me-1"></i>Главная
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/projects.html">
-                                <i class="bi bi-folder me-1"></i>Проекты
-                            </a>
-                        <   /li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/diary.html">
-                                <i class="bi bi-journal me-1"></i>Дневник
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contacts.html">
-                                <i class="bi bi-telephone me-1"></i>Контакты
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house me-1"></i>Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/projects.html"><i class="bi bi-folder me-1"></i>Проекты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/diary.html"><i class="bi bi-journal me-1"></i>Дневник</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contacts.html"><i class="bi bi-telephone me-1"></i>Контакты</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-    <!-- === ОСНОВНОЙ КОНТЕНТНЫЙ БЛОК === -->
+    <!-- ГЛАВНЫЙ КОНТЕНТ -->
     <div class="page-container">
-        <main class="container my-5">
+        <main class="container my-5" id="main-content">
 
-            <!-- === ПРИВЕТСТВИЕ + ФОТО === -->
+            <!-- ПРИВЕТСТВИЕ + ФОТО -->
             <section class="row align-items-center mb-5">
                 <div class="col-md-3 text-center mb-4 mb-md-0">
-                    <div class="border rounded-circle overflow-hidden mx-auto" style="width: 180px; height: 180px;">
-                        <img src="images/photo1.png" alt="Фото студента" class="w-100 h-100" style="object-fit: cover;">
+                    <div class="avatar-wrapper border rounded-circle overflow-hidden mx-auto">
+                        <picture>
+                            <!-- Раскомментируй, когда будут файлы -->
+                            <!-- <source srcset="images/photo1.avif" type="image/avif"> -->
+                            <!-- <source srcset="images/photo1.webp" type="image/webp"> -->
+                            <img src="images/photo1.png"
+                                 srcset="images/photo1.png 1x, images/photo1@2x.png 2x"
+                                 alt="Шульга Михаил Антонович"
+                                 loading="lazy" decoding="async">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <p class="lead">
                         Привет! Я студент<br>
-                        группы ЭФБО-05-24<br>
+                        группы <strong>ЭФБО-05-24</strong><br>
                         Увлекаюсь веб-разработкой
                     </p>
-                    <a href="assets/resume.pdf" class="btn btn-primary px-4" download>
+                    <a href="assets/resume.pdf" class="btn btn-primary px-5 py-3" download>
                         Скачать резюме
                     </a>
                 </div>
             </section>
 
-            <!-- === РАЗДЕЛИТЕЛЬ === -->
             <hr class="border-secondary opacity-25">
 
-            <!-- === НАВЫКИ === -->
+            <!-- НАВЫКИ -->
             <section class="mb-5">
-                <h2 class="text-center mb-4">Мои навыки</h2>
-                <div class="row justify-content">
-                    <div class="col-lg-8 ps-5">
-                        <!-- HTML -->
-                        <div class="skill-item mb-3">
+                <h2 class="text-center mb-5">Мои навыки</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="skill-item mb-4">
                             <div class="d-flex justify-content-between mb-1">
                                 <span>HTML</span>
                                 <span>90%</span>
                             </div>
-                            <div class="progress" style="height: 12px;">
+                            <div class="progress" style="height: 14px;">
                                 <div class="progress-bar bg-html" style="width: 90%;"></div>
                             </div>
                         </div>
 
-                        <!-- CSS -->
-                        <div class="skill-item mb-3">
+                        <div class="skill-item mb-4">
                             <div class="d-flex justify-content-between mb-1">
                                 <span>CSS</span>
                                 <span>85%</span>
                             </div>
-                            <div class="progress" style="height: 12px;">
+                            <div class="progress" style="height: 14px;">
                                 <div class="progress-bar bg-css" style="width: 85%;"></div>
                             </div>
                         </div>
 
-                        <!-- JavaScript -->
-                        <div class="skill-item mb-3">
+                        <div class="skill-item mb-4">
                             <div class="d-flex justify-content-between mb-1">
                                 <span>JavaScript</span>
                                 <span>75%</span>
                             </div>
-                            <div class="progress" style="height: 12px;">
+                            <div class="progress" style="height: 14px;">
                                 <div class="progress-bar bg-js" style="width: 75%;"></div>
                             </div>
                         </div>
 
-                        <!-- Bootstrap -->
-                        <div class="skill-item mb-3">
+                        <div class="skill-item mb-4">
                             <div class="d-flex justify-content-between mb-1">
                                 <span>Bootstrap</span>
                                 <span>80%</span>
                             </div>
-                            <div class="progress" style="height: 12px;">
+                            <div class="progress" style="height: 14px;">
                                 <div class="progress-bar bg-bootstrap" style="width: 80%;"></div>
                             </div>
                         </div>
 
-                        <!-- React -->
-                        <div class="skill-item mb-3">
+                        <div class="skill-item mb-4">
                             <div class="d-flex justify-content-between mb-1">
                                 <span>React</span>
                                 <span>60%</span>
                             </div>
-                            <div class="progress" style="height: 12px;">
+                            <div class="progress" style="height: 14px;">
                                 <div class="progress-bar bg-react" style="width: 60%;"></div>
                             </div>
                         </div>
@@ -152,53 +133,63 @@
                 </div>
             </section>
 
-            <!-- === РАЗДЕЛИТЕЛЬ === -->
             <hr class="border-secondary opacity-25">
 
-            <!-- === ЛУЧШИЕ ПРОЕКТЫ === -->
+            <!-- ЛУЧШИЕ ПРОЕКТЫ -->
             <section class="mb-5">
                 <h2 class="text-center mb-5">Лучшие проекты</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-                    <div class="col">
-                        <div class="card project-card h-100 shadow-sm text-center p-3">
-                            <div class="placeholder mb-3 mx-auto"></div>
-                            <h3 class="card-title">
-                                Проект 1 
-                            </h3>
-                            <h4 class="card-title">
-                                Приложение-корзина для покупки товаров.
-                            </h4>
-                            <h5 class="card-title">
-                                Десктоп приложение для учёта и покупки продуктов.
-                            </h5>
+
+                <div class="projects-grid">
+
+                    <!-- ПРОЕКТ 1 -->
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-img-wrapper ratio ratio-16x9">
+                            <picture>
+                                <source srcset="images/project1.jpg" type="image/avif">
+                                <source srcset="images/project1.jpg" type="image/webp">
+                                <img src="images/project1.jpg"
+                                     srcset="images/project1.jpg 1x, images/project1@2x.jpg 2x"
+                                     sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 30vw"
+                                     alt="Приложение-корзина для покупки товаров"
+                                     loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Проект 1</h5>
+                            <p class="card-text flex-grow-1">Приложение-корзина для покупки товаров.<br>Десктоп приложение для учёта и покупки продуктов.</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card project-card h-100 shadow-sm text-center p-3">
-                            <div class="placeholder mb-3 mx-auto"></div>
-                            <h3 class="card-title">
-                                Проект 2
-                            </h3>
-                            <h4 class="card-title">
-                                Личный сайт студента.
-                            </h4>
-                            <h5 class="card-title">
-                                Сайт-портфолио студента написанный в рамках учебной программы.
-                            </h5>
+
+                    <!-- ПРОЕКТ 2 -->
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-img-wrapper ratio ratio-16x9">
+                            <picture>
+                                <source srcset="images/project2.jpg" type="image/avif">
+                                <source srcset="images/project2.jpg" type="image/webp">
+                                <img src="images/project2.jpg"
+                                     srcset="images/project2.jpg 1x, images/project2@2x.jpg 2x"
+                                     sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 30vw"
+                                     alt="Личный сайт-портфолио студента"
+                                     loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title">Проект 2</h5>
+                            <p class="card-text flex-grow-1">Личный сайт студента.<br>Сайт-портфолио, написанный в рамках учебной программы.</p>
                         </div>
                     </div>
+
                 </div>
             </section>
 
         </main>
 
-        <!-- === ФУТЕР === -->
+        <!-- ФУТЕР -->
         <footer class="text-center py-4 border-top">
             <p class="mb-0 text-muted">© 2025 Михаил Шульга. Все права защищены.</p>
         </footer>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
